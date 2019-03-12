@@ -1,5 +1,4 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "Data.json");
 var listM = document.getElementById("listM");
 xhr.onload = async function () {
     var informationZ = JSON.parse(xhr.responseText);
@@ -29,4 +28,5 @@ xhr.onload = async function () {
         listName.insertAdjacentElement("beforeend", mark);
     }
 }
+xhr.open("GET", "Data.json");
 xhr.send();
