@@ -11,6 +11,8 @@ xhr.onload = async function () {
         }
         listM.appendChild(trE);
     }
+}
+xhr.onloadend = function () {
     listM.firstElementChild.classList.add("topStyle");
     var ageRatings = ["+18", "+17", "+16", "+14"];
     var colorSys = document.getElementsByTagName("tr");
