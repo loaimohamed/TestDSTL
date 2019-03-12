@@ -1,8 +1,21 @@
 var xhr = new XMLHttpRequest();
 var listM = document.getElementById("listM");
 xhr.open("GET", "Data.json");
-xhr.onload = async function () {
-        listM.firstElementChild.classList.add("topStyle");
+xhr.onload = async function () { 
+    var informationZ = JSON.parse(xhr.responseText);
+    for (l = 0; l < Object.keys(informationZ).length - 1; l++) {
+        var trE = document.createElement("tr");
+        for (i = 0; i < 8; i++) {
+            var tdE = document.createElement("td");
+            tdE.innerHTML = informationZ[l].List[i];
+            trE.appendChild(tdE);
+        }
+        listM.appendChild(trE);
+    }
+    
+}
+xhr.send();
+    listM.firstElementChild.classList.add("topStyle");
     var ageRatings = ["+18", "+17", "+16", "+14"];
     var colorSys = document.getElementsByTagName("tr");
     for (let i = 0; i < colorSys.length; i++) {
@@ -18,17 +31,3 @@ xhr.onload = async function () {
         if (search.includes("+18")) { mark.classList.add("T-rating18"); mark.setAttribute("data-color", "+18"); };
         listName.insertAdjacentElement("beforeend", mark);
     }
-    
-    var informationZ = JSON.parse(xhr.responseText);
-    for (l = 0; l < Object.keys(informationZ).length - 1; l++) {
-        var trE = document.createElement("tr");
-        for (i = 0; i < 8; i++) {
-            var tdE = document.createElement("td");
-            tdE.innerHTML = informationZ[l].List[i];
-            trE.appendChild(tdE);
-        }
-        listM.appendChild(trE);
-    }
-    
-}
-xhr.send();
