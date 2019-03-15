@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 var listM = document.getElementById("listM");
-xhr.open("GET", "Data.json");
+xhr.open("GET", "Data.json", true);
 xhr.onload = function () { 
     var informationZ = JSON.parse(xhr.responseText);
     for (l = 0; l < Object.keys(informationZ).length - 1; l++) {
@@ -12,9 +12,6 @@ xhr.onload = function () {
         }
         listM.appendChild(trE);
     }
-    
-}
-xhr.send();
 listM.firstElementChild.classList.add("topStyle");
     var ageRatings = ["+18", "+17", "+16", "+14"];
     var colorSys = document.getElementsByTagName("tr");
@@ -31,3 +28,6 @@ listM.firstElementChild.classList.add("topStyle");
         if (search.includes("+18")) { mark.classList.add("T-rating18"); mark.setAttribute("data-color", "+18"); };
         listName.insertAdjacentElement("beforeend", mark);
 }
+    
+}
+xhr.send();
