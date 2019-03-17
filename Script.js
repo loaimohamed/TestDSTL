@@ -15,7 +15,7 @@ xhr.onload = function () {
 listM.firstElementChild.classList.add("topStyle");
     var ageRatings = ["+18", "+17", "+16", "+14"];
     var colorSys = document.getElementsByTagName("tr");
-    for (let i = 0; i < colorSys.length; i++) {
+    for (var i = 0; i < colorSys.length; i++) {
         var mark = document.createElement("span"),
             listName = colorSys[i].children[0];
         mark.classList.add("boxmarks");
