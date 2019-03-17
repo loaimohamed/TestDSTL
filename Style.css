@@ -3,12 +3,8 @@ td {border: 0.1px solid;padding: 10px 6px;}
 table {border-collapse: collapse;margin: 0 auto;margin-bottom: 75px;}
 tr.topStyle > td {background: #c0c0c0;}
 .boxmarks {position: relative;color: #FFF;font-size: 8px;padding: 2px;left: 0px;top: -14px;border-radius: 2.5px;}
-.T-rating12 {background: green;}.T-rating15::after {content: attr(data-color);text-align: center;}
-.T-rating15 {background: darkgoldenrod;}.T-rating15::after {content: attr(data-color);text-align: center;}
-.T-rating18 {background-color: red;}.T-rating18::after {content: attr(data-color);text-align: center;}
-.T-rating16 {background: blue;}.T-rating16::after {content: attr(data-color);text-align: center;}
-.T-rating17 {background: -webkit-linear-gradient(45deg,red,blue);}.T-rating17::after {content: attr(data-color);text-align: center;}
-.rating15 {background: darkgoldenrod;}.rating18 {background: red;}.rating16 {background: blue;}.rating17 {background: -webkit-linear-gradient(red,blue);}
-
-
-
+.T-rating12 {background: green;}.T-rating12::after {content: "+12";text-align: center;}
+.T-rating15 {background: greenyellow;}.T-rating15::after {content: "+15";text-align: center;}
+.T-rating18 {background: red;}.T-rating18::after {content: "+18";text-align: center;}
+.T-rating16 {background: blue;}.T-rating16::after {content: "+16";text-align: center;}
+.T-rating17 {background: purple;}.T-rating17::after {content: "+17";text-align: center;}
