@@ -25,12 +25,12 @@ function colorSystem() {
             search = colorSys[i].children[6].innerHTML,
             listName = colorSys[i].children[0];
         mark.classList.add("boxmarks");
-        if (search.includes("+12")) { mark.classList.add("T-rating12"); };
-        if (search.includes("+14")) { mark.classList.add("T-rating15"); };
-        if (search.includes("+15")) { mark.classList.add("T-rating15"); };
-        if (search.includes("+16")) { mark.classList.add("T-rating16"); };
-        if (search.includes("+17")) { mark.classList.add("T-rating17"); };
-        if (search.includes("+18")) { mark.classList.add("T-rating18"); };
+        if (search.includes("+12") == true) { mark.classList.add("T-rating12"); };
+        if (search.includes("+14") == true) { mark.classList.add("T-rating15"); };
+        if (search.includes("+15") == true) { mark.classList.add("T-rating15"); };
+        if (search.includes("+16") == true) { mark.classList.add("T-rating16"); };
+        if (search.includes("+17") == true) { mark.classList.add("T-rating17"); };
+        if (search.includes("+18") == true) { mark.classList.add("T-rating18"); };
         listName.insertAdjacentElement("beforeend", mark);
     }
 }
