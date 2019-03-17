@@ -24,7 +24,7 @@ function colorSystem() {
             search = colorSys[i].children[6].innerHTML,
             listName = colorSys[i].children[0];
         mark.classList.add("boxmarks");
-        console.log(search.includes("+18"));
+        console.log(search.indexOf("+18"));
         listName.insertAdjacentElement("beforeend", mark);
     }
 }
