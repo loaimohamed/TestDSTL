@@ -16,23 +16,15 @@ xhr.onload = function () {
     colorSystem();
 }
 xhr.send();
-/*
 function colorSystem() {
     listM.firstElementChild.classList.add("topStyle");
-    var ageRatings = ["+18", "+17", "+16", "+14"];
     var colorSys = document.getElementsByTagName("tr");
     for (var i = 0; i < colorSys.length; i++) {
         var mark = document.createElement("span"),
             search = colorSys[i].children[6].innerHTML,
             listName = colorSys[i].children[0];
         mark.classList.add("boxmarks");
-        if (search.includes("+12") == true) { mark.classList.add("T-rating12"); };
-        if (search.includes("+14") == true) { mark.classList.add("T-rating15"); };
-        if (search.includes("+15") == true) { mark.classList.add("T-rating15"); };
-        if (search.includes("+16") == true) { mark.classList.add("T-rating16"); };
-        if (search.includes("+17") == true) { mark.classList.add("T-rating17"); };
-        if (search.includes("+18") == true) { mark.classList.add("T-rating18"); };
+        console.log(search.include("+18"));
         listName.insertAdjacentElement("beforeend", mark);
     }
 }
-*/
