@@ -20,7 +20,7 @@ listM.firstElementChild.classList.add("topStyle");
             listName = colorSys[i].children[0];
         mark.classList.add("boxmarks");
         search = colorSys[i].children[6].innerHTML;
-        if (search.includes("+12")) { mark.classList.add("T-rating12"); mark.setAttribute("data-color", "+12"); };
+        //if (search.includes("+12")) { mark.classList.add("T-rating12"); mark.setAttribute("data-color", "+12"); };
         if (search.includes("+14")) { mark.classList.add("T-rating15"); mark.setAttribute("data-color", "+14"); };
         if (search.includes("+15")) { mark.classList.add("T-rating15"); mark.setAttribute("data-color", "+15"); };
         if (search.includes("+16")) { mark.classList.add("T-rating16"); mark.setAttribute("data-color", "+16"); };
