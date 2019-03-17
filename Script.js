@@ -3,6 +3,7 @@ var listM = document.getElementById("listM");
 xhr.open("GET", "Data.json");
 xhr.onreadystatechange = function () { 
     var informationZ = JSON.parse(xhr.responseText);
+    informationZ.overrideMimeType("application/json");
     for (l = 0; l < Object.keys(informationZ).length - 1; l++) {
         var trE = document.createElement("tr");
         for (i = 0; i < 8; i++) {
