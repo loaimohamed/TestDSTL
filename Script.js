@@ -1,7 +1,7 @@
 var xhr = new XMLHttpRequest();
 var listM = document.getElementById("listM");
 xhr.overrideMimeType("application/json");
-xhr.open("GET", "Data.json");
+xhr.open("GET", "https://raw.githubusercontent.com/loaimohamed/Test/master/Data.json");
 xhr.onload = function () { 
     var informationZ = JSON.parse(xhr.responseText);
     for (l = 0; l < Object.keys(informationZ).length - 1; l++) {
